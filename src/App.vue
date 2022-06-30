@@ -1,13 +1,9 @@
-<script setup></script>
+<script setup>
+import { isMobileTerminal } from "@/utils/flexible";
+</script>
 
 <template>
-  <div>
-    <span
-      class="text-lg bg-pink-400 inline-block m-2 p-3 rounded-md shadow-2xl shadow-pink-400 text-center"
-      >123</span
-    >
-    <button class="btn btn-green">TEST</button>
-  </div>
+  <router-view />
 </template>
 
 <style>
